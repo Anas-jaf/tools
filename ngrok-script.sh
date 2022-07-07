@@ -15,6 +15,11 @@ if [ -z $tunnels ];then
         ./ngrok $1 $2
     else 
         sudo wget -q https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
+        if [[ ngrok-v3-stable-linux-amd64* == *.tar ]];then
+            sudo tar -xzf ngrok-v3-stable-linux-amd64.tar
+        else
+            sudo gunzip ngrok-v3-stable-linux-amd64.tgz
+        fi
         sudo tar -xzf ngrok-v3-stable-linux-amd64.tar
         sudo chmod +x ./ngrok
         read -p "Please type your ngrok auth token : " AUTH_KEY
