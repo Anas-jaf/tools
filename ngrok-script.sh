@@ -14,8 +14,8 @@ if [ -z $tunnels ];then
     if [ -e ngrok ];then
         ./ngrok $1 $2
     else 
-        wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
-        chmod +x ngrok
+        sudo wget -q https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
+        sudo chmod +x ./ngrok
         read -p "Please type your ngrok auth token : " AUTH_KEY
         ./ngrok authtoken $AUTH_KEY
         ./ngrok $1 $2
