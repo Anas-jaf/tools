@@ -6,9 +6,19 @@ else
     read -p "Please type your ngrok api : " API_KEY
     echo $API_KEY |sudo tee apikey.txt > /dev/null
 fi
+# if [ -e ngrok]
 
 # to get the tunnel public url and port  
-python3 -c "import ngrok;client=ngrok.Client('$API_KEY');[print(i) for i in client.tunnels.list() ]" | egrep 'public_url.*started_at'  --only-matching | cut -c 15-|rev|cut -c 15-|rev
-
+tunnels = `python3 -c "import ngrok;client=ngrok.Client('$API_KEY');[print(i) for i in client.tunnels.list() ]" | egrep 'public_url.*started_at'  --only-matching | cut -c 15-|rev|cut -c 15-|rev`
+if [ -z $tunnels ];then 
+    if [ -e ngrok ];then
+        ./ngrok $1 $2
+    else 
+        wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
+        chmod +x ngrok
+        read -p "Please type your ngrok auth token : " AUTH_KEY
+        ./ngrok authtoken $AUTH_KEY
+        ./ngrok $1 $2
+        
 # TODO
 # add the feature to create anonymous ngrok account
