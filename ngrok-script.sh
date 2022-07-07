@@ -3,7 +3,7 @@
 if [ -e apikey.txt];then
     API_KEY=`cat apikey.txt`
 else
-    read -p "Please type your ngrok api" API_KEY
+    read -p "Please type your ngrok api : " API_KEY
     echo API_KEY > apikey.txt
 fi
 
