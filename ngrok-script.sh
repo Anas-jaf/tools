@@ -20,6 +20,8 @@ if [ -z $tunnels ];then
         ./ngrok authtoken $AUTH_KEY
         ./ngrok $1 $2
     fi
+else 
+    echo $tunnels
 fi
 # TODO
 # add the feature to create anonymous ngrok account
