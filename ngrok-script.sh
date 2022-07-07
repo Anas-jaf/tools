@@ -4,7 +4,7 @@ if [ -e apikey.txt];then
     API_KEY=`cat apikey.txt`
 else
     read -p "Please type your ngrok api : " API_KEY
-    echo API_KEY > apikey.txt
+    echo API_KEY |sudo tee apikey.txt > /dev/null
 fi
 
 # to get the tunnel public url and port  
