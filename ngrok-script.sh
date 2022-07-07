@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -e apikey.txt];then
+if [ -e apikey.txt ];then
     API_KEY=`cat apikey.txt`
 else
     read -p "Please type your ngrok api : " API_KEY
