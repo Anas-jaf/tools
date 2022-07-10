@@ -24,7 +24,11 @@ if [ -z $tunnels ];then
         sudo chmod +x ./ngrok
         read -p "Please type your ngrok auth token : " AUTH_KEY
         ./ngrok authtoken $AUTH_KEY
-        ./ngrok $1 $2
+        if [  -z $1 $2 ]
+            ./ngrok tcp 4444
+        else
+            ./ngrok $1 $2
+        fi
     fi
 else 
     echo $tunnels
