@@ -18,10 +18,14 @@ Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
     echo 'found ssh server ....... skipping'
 }
 
+# create user1 with password for ssh to connect to 
+$password = '01230123' | ConvertTo-SecureString -AsPlainText -Force
+New-LocalUser -Name user1 -Password  $password
+
 # Install the client and server features by running the following commands:
 
-dism /Online /Add-Capability /CapabilityName:OpenSSH.Client~~~~0.0.1.0
-dism /Online /Add-Capability /CapabilityName:OpenSSH.Server~~~~0.0.1.0
+# dism /Online /Add-Capability /CapabilityName:OpenSSH.Client~~~~0.0.1.0
+# dism /Online /Add-Capability /CapabilityName:OpenSSH.Server~~~~0.0.1.0
 
 ##############################################################
 ##### if ssh agent is not running execute those commands #####
@@ -30,9 +34,18 @@ dism /Online /Add-Capability /CapabilityName:OpenSSH.Server~~~~0.0.1.0
 # Get-Service ssh-agent | Select StartType
 # Get-Service -Name ssh-agent | Set-Service -StartupType Manual
 
+#############################################
+###### fix for permission denied issue ######
+#############################################
 
-#restart the machine
-Restart-Computer -Force
+#### install the opensshutils and fix it's issue ###
+# Install-Module -Force OpenSSHUtils
+
+# # if upove command doesn't work try this command
+# Install-Module -Name OpenSSHUtils -RequiredVersion 1.0.0.1 -SkipPublisherCheck -Scope CurrentUser
+
+# #restart the machine
+# Restart-Computer -Force
 
 # Start the sshd service
 echo 'starting the service'
