@@ -6,8 +6,9 @@
 # TO REVERSE SSH TUNNEL 
 #     ssh -R 43022:localhost:22 kali@192.168.1.105 -p 22
 
-
-
+# api key
+# https://www.gillmeister-software.com/online-tools/text/encrypt-decrypt-text.aspx
+# UgB0fY0qTNI8y2/9jh//teB1mqWa46yfADCOYniMM5hg1bkPZWmdP0PCwNT+ka+nDLMQtV7+zGguTKkheYjYMatrJfVdAYLtGp5hM6lfK4MpCHo9wYXoki3zjCglkqlh3DOdy30Uw9Xf/i2HU/LhkKeb6u2X1zkyXgGjtdhVwCkDCOMpz/xhdJOdNeCTx9742MeRTw4jJRHIAgEuIwrHpltI9+DBXh9XoUxpF3n/Bdb/s29cD0YNLQXLoGmp2Xi6
 
 
 
