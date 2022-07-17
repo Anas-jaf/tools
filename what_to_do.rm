@@ -1,0 +1,18 @@
+1- غير اسم المضيف 
+    hostname DESKTOP-xxxxxx
+    hostnamectl set-hostname DESKTOP-xxxxxx
+
+    غير الاسم في هذا الملف الى اسمك الجديدsudo nano /etc/hosts 
+
+2- عدل الشبكة الى bridged mode
+https://i.stack.imgur.com/xwTjT.png
+
+3- غير اسم نسخة فيرجول الى DESKTOP-xxxxxx
+
+4- تهيئة تشغيل النسخة مع بداية النظام schadualed task with powershell 
+
+5- تهيئة ssh و نفق ngrok 
+https://github.com/Anas-jaf/tools/blob/main/ngrok-script.sh
+
+6- تغير صورة الخلفية و ايقونتها 
+
