@@ -23,6 +23,9 @@ Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 $password = '01230123' | ConvertTo-SecureString -AsPlainText -Force
 New-LocalUser -Name user1 -Password  $password
 
+### giving the user admin rights 
+Add-LocalGroupMember -Group "Administrators" -Member "user1"
+
 # Install the client and server features by running the following commands:
 
 # dism /Online /Add-Capability /CapabilityName:OpenSSH.Client~~~~0.0.1.0

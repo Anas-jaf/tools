@@ -16,5 +16,41 @@ sudo wget https://archive.kali.org/archive-key.asc -O /etc/apt/trusted.gpg.d/kal
 --2022-07-15 09:42:39--  https://archive.kali.org/archive-key.asc
 
 sudo dpkg -i kali-archive-keyring_2022.1_all.deb
-sudo apt update 
-sudo apt full-upgrade
+apt update
+apt install libcrypt1
+apt full-upgrade
+apt autoremove
+
+##### incase gpg error try this 
+# chmod 777 /tmp
+# apt update
+
+#  incase this error happend 
+##########################
+# Sorry, try again.
+# Sorry, try again.
+# sudo: 3 incorrect password attempts
+##########################
+# wsl -u root passwd <username>
+##########################
+# if it doesn't fix it try these commands 
+########
+# wsl --export kali-linux snapshot.tar
+# wsl -u root rm /etc/sudoers
+# wsl -u root apt install --reinstall -o Dpkg::Options::="--force-confask,confnew,confmiss" sudo
+
+
+#    incase libc-bin error try to fix with these commands 
+#######################
+# cd /tmp
+# apt -y download libcrypt1
+# dpkg-deb -x libcrypt1_1%3a4.4.27-1.1_amd64.deb .
+# cp -av lib/x86_64-linux-gnu/* /lib/x86_64-linux-gnu/
+# apt -y --fix-broken install
+###################### or this 
+# sudo mv /var/lib/dpkg/info /var/lib/dpkg/info_old
+# sudo mkdir /var/lib/dpkg/info
+# sudo apt-get update && sudo apt-get -f install
+# sudo mv /var/lib/dpkg/info/* /var/lib/dpkg/info_old
+# sudo rm -rf /var/lib/dpkg/info　
+# sudo mv /var/lib/dpkg/info_old /var/lib/dpkg/info
