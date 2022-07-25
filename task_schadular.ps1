@@ -15,3 +15,6 @@
     # Register-ScheduledTask -TaskName "MonitorGroupMembership" -Trigger $Trigger -User $User -Action $Action -RunLevel Highest -Force
 
 start-process PowerShell.exe -arg '& $Env:Programfiles\Oracle\VirtualBox\VBoxManage.exe startvm desktop-ib79771 --type headless'  -WindowStyle Hidden
+
+
+cmd.exe /c start /min cmd /c "%Programfiles%\Oracle\VirtualBox\VBoxManage.exe" startvm desktop-ib79771 --type headless
