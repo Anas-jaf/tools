@@ -18,3 +18,9 @@ start-process PowerShell.exe -arg '& $Env:Programfiles\Oracle\VirtualBox\VBoxMan
 
 
 cmd.exe /c start /min cmd /c "%Programfiles%\Oracle\VirtualBox\VBoxManage.exe" startvm desktop-ib79771 --type headless
+
+# OR use vbs like this script
+
+# command = "powershell.exe -nologo -ExecutionPolicy Unrestricted -File .\headless_kali.ps1"
+# set shell = CreateObject("WScript.Shell")
+# shell.Run command,0
