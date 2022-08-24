@@ -1,0 +1,74 @@
+x = document.getElementsByClassName("gdlr-core-feature-box-link")
+for (let value of x) {
+  console.log(value.href);
+}
+
+https://hec.mutah.edu.jo/
+https://na-id.mutah.edu.jo/
+http://app.mutah.edu.jo:7777/bankfees/
+http://app.mutah.edu.jo:7777/openreq/
+http://app.mutah.edu.jo:7777/studtr/
+http://oraapp.mutah.edu.jo:8889/forms/frmservlet?config=coll
+http://portal1.mutah.edu.jo/StudCard/faces/LoginPage?_adf.ctrl-state=u7zmkb7o2_3
+http://portal1.mutah.edu.jo/NVacantForm/faces/Login?_adf.ctrl-state=vwtkuw9cm_3
+http://app.mutah.edu.jo:7777/evaluation/
+http://portal1.mutah.edu.jo/eservice/faces/loginView?_adf.ctrl-state=13tzanggyx_3
+https://www.mutah.edu.jo/Pages/Students-Registration.aspx
+http://app.mutah.edu.jo:7777/withdraw/
+https://www.mutah.edu.jo/docs/Guid_PUB.pdf
+https://www.mutah.edu.jo/docs/ExamKafah.pdf
+http://app.mutah.edu.jo:7777/studfees
+http://oraapp.mutah.edu.jo:8889/forms/frmservlet?config=studfree
+https://www.mutah.edu.jo/Lists/UniCalendar/Calendar.aspx
+https://studentphone.mutah.edu.jo/
+https://login.microsoftonline.com/common/oauth2/authorize?cl…e00-000000000000&response_mode=form_post&response_type=code+
+https://www.mutah.edu.jo/Lists/Announcements/All.aspx
+http://portal1.mutah.edu.jo/eservice/faces/loginView?_adf.ctrl-state=df5tec2tl_3
+https://www.mutah.edu.jo/Pages/E-Learninig.aspx
+https://www.mutah.edu.jo/Pages/University-fees.aspx
+http://portal1.mutah.edu.jo/mu/faces/LOGIN?_adf.ctrl-state=mnkihw9it_3
+http://gradpic.mutah.edu.jo/
+http://app.mutah.edu.jo:7777/studpf/
+http://portal1.mutah.edu.jo/f/faces/post?_adf.ctrl-state=3xf95w4z5_3
+https://sspr.mutah.edu.jo/
+http://portal1.mutah.edu.jo/graddocs/faces/login?_adf.ctrl-state=5yojqsafg_3
+https://stdpic.mutah.edu.jo/
+https://hec.mutah.edu.jo/ debugger eval code:3:11
+https://na-id.mutah.edu.jo/ debugger eval code:3:11
+http://app.mutah.edu.jo:7777/bankfees/ debugger eval code:3:11
+http://app.mutah.edu.jo:7777/openreq/ debugger eval code:3:11
+http://app1.mutah.edu.jo:7777/studtr/logscreen.jsp debugger eval code:3:11
+http://oraapp.mutah.edu.jo:8889/forms/frmservlet?config=coll debugger eval code:3:11
+http://portal1.mutah.edu.jo/StudCard/faces/LoginPage?_adf.ctrl-state=u7zmkb7o2_3 debugger eval code:3:11
+http://portal1.mutah.edu.jo/v/faces/VForm?_adf.ctrl-state=10hu9vr9l9_3 debugger eval code:3:11
+http://app.mutah.edu.jo:7777/evaluation/ debugger eval code:3:11
+http://portal1.mutah.edu.jo/eeservice/faces/loginView?_adf.ctrl-state=13tzanggyx_3 debugger eval code:3:11
+http://app.mutah.edu.jo:7777/studreg/ debugger eval code:3:11
+http://app.mutah.edu.jo/withdraw/ debugger eval code:3:11
+https://www.mutah.edu.jo/docs/Guid_PUB.pdf debugger eval code:3:11
+https://www.mutah.edu.jo/docs/ExamKafah.pdf debugger eval code:3:11
+http://portal1.mutah.edu.jo/f/faces/post?_adf.ctrl-state=iuip8fzkj_3 debugger eval code:3:11
+http://portal1.mutah.edu.jo/manaseer/faces/log debugger eval code:3:11
+http://oraapp.mutah.edu.jo:8889/forms/frmservlet?config=studfree debugger eval code:3:11
+https://www.mutah.edu.jo/Lists/UniCalendar/Calendar.aspx debugger eval code:3:11
+https://stud_info.mutah.edu.jo/ debugger eval code:3:11
+https://studentphone.mutah.edu.jo/ debugger eval code:3:11
+https://login.microsoftonline.com/common/oauth2/authorize?cl…e00-000000000000&response_mode=form_post&response_type=code+ debugger eval code:3:11
+https://www.mutah.edu.jo/Lists/Announcements/All.aspx debugger eval code:3:11
+http://portal1.mutah.edu.jo/eservice/faces/loginView?_adf.ctrl-state=72d3klyrq_3 debugger eval code:3:11
+https://www.mutah.edu.jo/Pages/E-Learninig.aspx debugger eval code:3:11
+http://portal1.mutah.edu.jo/mu/faces/LOGIN?_adf.ctrl-state=mnkihw9it_3
+http://192.168.24.21:7777/reports/rwservlet?keyStudPlan&P_STUD_NUM=BDA0483A078FA31855EF086AE9ECFEAE
+https://estexam.mutah.edu.jo/?stud_num=620200823010
+https://ecourse.mutah.edu.jo
+http://med-elearn.mutah.edu.jo
+http://med-elearn1.mutah.edu.jo
+HTTPS://LMS.MUTAH.EDU.JO
+HTTPS://LMSSb1.MUTAH.EDU.JO
+HTTPS://LMSSb2.MUTAH.EDU.JO
+HTTPS://LMSSb3.MUTAH.EDU.JO
+https://eportal.mutah.edu.jo/rapp/
+https://academics.mutah.edu.jo/m.alghababsheh/sitepages/Home.aspx
+https://eijaz.mutah.edu.jo/shoes.htm
+https://agriculture.mutah.edu.jo/Home.aspx
+https://e-print.mutah.edu.jo/index.php/en/
